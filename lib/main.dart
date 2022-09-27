@@ -50,6 +50,10 @@ class CalcAppState extends State<CalcApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        useMaterial3: true,
+        primarySwatch: Colors.blue
+      ),
       debugShowCheckedModeBanner: false,
       title: 'Calculator',
       home: Scaffold(
@@ -204,7 +208,7 @@ class CalcAppState extends State<CalcApp> {
                   CalcButton(
                     text: '00',
                     callback: numClick,
-                    textSize: 26, fillColor: 0xFFF44336,
+                    textSize: 20, fillColor: 0xFFF44336,
                   ),
                   CalcButton(
                     text: '=',
