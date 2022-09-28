@@ -25,7 +25,6 @@ class CalcButton extends StatelessWidget {
         width: 65,
         height: 65,
         child: ElevatedButton(
-          //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0),),
           onPressed: () {
             callback(text);
           },
