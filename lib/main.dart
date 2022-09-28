@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import './widgets/CalcButton.dart';
 
 void main() {
-  runApp(CalcApp());
+  runApp(const CalcApp());
 }
 
 class CalcApp extends StatefulWidget {
@@ -52,48 +52,48 @@ class CalcAppState extends State<CalcApp> {
     return MaterialApp(
       theme: ThemeData(
         useMaterial3: true,
-        primarySwatch: Colors.blue
+        primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
       title: 'Calculator',
       home: Scaffold(
-        backgroundColor: Color(0xFF283637),
+        backgroundColor: const Color(0xFF283637),
         body: Container(
-          padding: EdgeInsets.all(12),
+          padding: const EdgeInsets.all(12),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
               Container(
+                alignment: const Alignment(1.0, 1.0),
                 child: Padding(
                   padding: const EdgeInsets.only(right: 12),
                   child: Text(
                     _history,
                     style: GoogleFonts.rubik(
-                      textStyle: TextStyle(
+                      textStyle: const TextStyle(
                         fontSize: 24,
                         color: Color(0xFF545F61),
                       ),
                     ),
                   ),
                 ),
-                alignment: Alignment(1.0, 1.0),
               ),
               Container(
+                alignment: const Alignment(1.0, 1.0),
                 child: Padding(
                   padding: const EdgeInsets.all(12),
                   child: Text(
                     _expression,
                     style: GoogleFonts.rubik(
-                      textStyle: TextStyle(
+                      textStyle: const TextStyle(
                         fontSize: 48,
                         color: Colors.white,
                       ),
                     ),
                   ),
                 ),
-                alignment: Alignment(1.0, 1.0),
               ),
-              SizedBox(height: 40),
+              const SizedBox(height: 40),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
@@ -127,15 +127,18 @@ class CalcAppState extends State<CalcApp> {
                 children: <Widget>[
                   CalcButton(
                     text: '7',
-                    callback: numClick, fillColor: 0xFFF44336,
+                    callback: numClick,
+                    fillColor: 0xFFF44336,
                   ),
                   CalcButton(
                     text: '8',
-                    callback: numClick, fillColor: 0xFFF44336,
+                    callback: numClick,
+                    fillColor: 0xFFF44336,
                   ),
                   CalcButton(
                     text: '9',
-                    callback: numClick, fillColor: 0xFFF44336,
+                    callback: numClick,
+                    fillColor: 0xFFF44336,
                   ),
                   CalcButton(
                     text: '*',
@@ -151,15 +154,18 @@ class CalcAppState extends State<CalcApp> {
                 children: <Widget>[
                   CalcButton(
                     text: '4',
-                    callback: numClick, fillColor: 0xFFF44336,
+                    callback: numClick,
+                    fillColor: 0xFFF44336,
                   ),
                   CalcButton(
                     text: '5',
-                    callback: numClick, fillColor: 0xFFF44336,
+                    callback: numClick,
+                    fillColor: 0xFFF44336,
                   ),
                   CalcButton(
                     text: '6',
-                    callback: numClick, fillColor: 0xFFF44336,
+                    callback: numClick,
+                    fillColor: 0xFFF44336,
                   ),
                   CalcButton(
                     text: '-',
@@ -175,15 +181,18 @@ class CalcAppState extends State<CalcApp> {
                 children: <Widget>[
                   CalcButton(
                     text: '1',
-                    callback: numClick, fillColor: 0xFFF44336,
+                    callback: numClick,
+                    fillColor: 0xFFF44336,
                   ),
                   CalcButton(
                     text: '2',
-                    callback: numClick, fillColor: 0xFFF44336,
+                    callback: numClick,
+                    fillColor: 0xFFF44336,
                   ),
                   CalcButton(
                     text: '3',
-                    callback: numClick, fillColor: 0xFFF44336,
+                    callback: numClick,
+                    fillColor: 0xFFF44336,
                   ),
                   CalcButton(
                     text: '+',
@@ -199,16 +208,19 @@ class CalcAppState extends State<CalcApp> {
                 children: <Widget>[
                   CalcButton(
                     text: '.',
-                    callback: numClick, fillColor: 0xFFF44336,
+                    callback: numClick,
+                    fillColor: 0xFFF44336,
                   ),
                   CalcButton(
                     text: '0',
-                    callback: numClick, fillColor: 0xFFF44336,
+                    callback: numClick,
+                    fillColor: 0xFFF44336,
                   ),
                   CalcButton(
                     text: '00',
                     callback: numClick,
-                    textSize: 20, fillColor: 0xFFF44336,
+                    textSize: 20,
+                    fillColor: 0xFFF44336,
                   ),
                   CalcButton(
                     text: '=',
